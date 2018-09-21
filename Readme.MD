@@ -1,6 +1,6 @@
-###Dog Directory
-####Created by Jason Gallagher
-###Goals
+### Dog Directory
+#### Created by Jason Gallagher
+### Goals
 #### Scalable Maintainable Solution
 The intention of this project was to create a web app with a scalable, maintainable solution. To make the solution scalable, I made sure to create a base API response that contains at minimum what you expect to see is returned by the API, a status and a message. This allows for further API responses to be added in the future by simply extending this class and adding the create logic to the API Response Factory.
 
