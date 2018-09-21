@@ -25,6 +25,9 @@ namespace DogDirectory
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/api2").Include("~/Scripts/Api2Methods.js"));
+
         }
     }
 }

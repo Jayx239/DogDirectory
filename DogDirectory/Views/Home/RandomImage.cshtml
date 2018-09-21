@@ -1,0 +1,29 @@
+﻿@using DogDirectory.Models.Data
+@model Image
+@{
+    ViewBag.Title = "RandomImage";
+}
+
+<h2>RandomImage</h2>
+
+<div class="container container-fluid">
+    <div class="col-xs-12">
+        @if ((ViewBag.Errors != null && ViewBag.Errors.Count > 0) || Model == null || Model.SourceString == null || Model.SourceString == "")
+        {
+            <span>Uh oh!!! We can't find a picture of that dog right now!</span>
+        }
+        else
+        {
+            <div class="row">
+                <div class="col-xs-12">
+                    <span>Checkout this dog</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="@Model.SourceString" />
+                </div>
+            </div>
+        }
+    </div>
+</div>

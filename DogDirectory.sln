@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogDirectory", "DogDirectory\DogDirectory.csproj", "{2F5E1D22-41FF-44BF-9BBA-3B9C5264B036}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogDirectory.Test", "DogDirectory.Test\DogDirectory.Test.csproj", "{42B7E841-D19E-48A4-B65B-D7B3B1856D7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2F5E1D22-41FF-44BF-9BBA-3B9C5264B036}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F5E1D22-41FF-44BF-9BBA-3B9C5264B036}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F5E1D22-41FF-44BF-9BBA-3B9C5264B036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42B7E841-D19E-48A4-B65B-D7B3B1856D7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42B7E841-D19E-48A4-B65B-D7B3B1856D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42B7E841-D19E-48A4-B65B-D7B3B1856D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42B7E841-D19E-48A4-B65B-D7B3B1856D7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

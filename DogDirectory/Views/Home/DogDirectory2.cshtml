@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "DogDirectory2";
+}
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/api2")
+<script type="text/javascript">
+    $(document).ready(function () {
+        LoadDogList();
+    })
+</script>
+<h2>Dog Directory 2.0</h2>
+<h3>An Ajax Implementation with a better API</h3>
+<div class="container container-fluid">
+    <div class="row">
+        <div id="DogListArea" class="col-xs-7">
+
+        </div>
+        <div id="ImageArea" class="col-xs-5">
+            <span id="ErrorMessage"></span>
+            <img src="" />
+        </div>
+    </div>
+</div>

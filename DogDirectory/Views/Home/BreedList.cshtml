@@ -1,0 +1,36 @@
+﻿@using DogDirectory.Models.Data
+@model List<Breed>
+
+@{
+    ViewBag.Title = "BreedList";
+}
+
+<h2>BreedList</h2>
+
+<div class="container container-fluid">
+    <div class="col-xs-12">
+        @if ((ViewBag.Errors != null && ViewBag.Errors.Count > 1) || Model == null || Model.Count < 1)
+        {
+            <span>Uh oh!!! We can't find our list of dogs right now!</span>
+        }
+        else
+        {
+            <ul>
+                @foreach (Breed breed in Model)
+                {
+                    <li><a href="@Url.Action("RandomImage", "Home", new { name = breed.BreedName })">@breed.BreedName</a></li>
+                    if (breed.Variations.Count > 0)
+                    {
+                        foreach (BreedVariation variation in breed.Variations)
+                        {
+                            <li>
+                                <a href="@Url.Action("RandomImage", "Home", new { name = breed.BreedName + "/" + variation.Name })">@variation.Name @breed.BreedName</a>
+                            </li>
+
+                        }
+                    }
+                }
+            </ul>
+        }
+    </div>
+</div>

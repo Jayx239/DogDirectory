@@ -151,6 +151,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Data\Breed.cs" />
+    <Compile Include="Models\Data\BreedVariation.cs" />
+    <Compile Include="Models\Service\API\APIResponseFactory.cs" />
+    <Compile Include="Models\Service\API\APIService.cs" />
+    <Compile Include="Models\Service\API\Response\IAPIResponse.cs" />
+    <Compile Include="Models\Service\API\ResponseStatus.cs" />
+    <Compile Include="Models\Service\DogService.cs" />
+    <Compile Include="Models\Data\Image.cs" />
+    <Compile Include="Models\Service\API\Response\BaseAPIResponse.cs" />
+    <Compile Include="Models\Service\API\Response\BreedListAPIResponse.cs" />
+    <Compile Include="Models\Service\API\Response\ImageAPIResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -162,6 +173,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\Api2Methods.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -192,10 +204,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\BreedList.cshtml" />
+    <Content Include="Views\Home\RandomImage.cshtml" />
+    <Content Include="Views\Home\DogDirectory2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
