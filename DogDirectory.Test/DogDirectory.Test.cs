@@ -27,8 +27,6 @@ namespace DogDirectory.Test
 
             Assert.IsNotNull(ApiResponse);
             Assert.IsTrue(ApiResponse.Status.GetStatus() == ResponseStatus.Status.Unknown);
-            /* Null tests */
-            //Assert.IsNotNull(response);
         }
 
         [TestMethod]
@@ -45,6 +43,7 @@ namespace DogDirectory.Test
         #endregion
 
         #region Test Dog Service
+
         [TestMethod]
         public void TestGetBreedList()
         {
@@ -81,6 +80,28 @@ namespace DogDirectory.Test
             /* Null tests */
             Assert.IsNotNull(response);
 
+            Assert.IsTrue(response.SourceString.Length == 0);
+        }
+
+        [TestMethod]
+        public void TestGetImageNullInput()
+        {
+            DogService dogService = new DogService();
+            Image response = dogService.GetImage(null);
+
+            /* Null tests */
+            Assert.IsNotNull(response);
+            Assert.IsTrue(response.SourceString.Length == 0);
+        }
+
+        [TestMethod]
+        public void TestGetImageBlankInput()
+        {
+            DogService dogService = new DogService();
+            Image response = dogService.GetImage("");
+
+            /* Null tests */
+            Assert.IsNotNull(response);
             Assert.IsTrue(response.SourceString.Length == 0);
         }
 
